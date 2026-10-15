@@ -1,0 +1,31 @@
+# 公开文件
+!README.md
+!LICENSE
+!docs/
+!plugin/
+!examples/
+
+# 私有与本地记录
+PROJECT.md
+private/
+build/
+
+# 模型文件（不随库分发，经下载引导获取）
+plugin/models/
+plugin/TD-MapForge-models/
+TD-MapForge-models/
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# pip --target 依赖目录（≈880MB，不随库分发，经引导脚本获取）
+plugin/TD-MapForge-python/
+TD-MapForge-python/
+
+# TouchDesigner / 系统缓存
+*.backup*
+Backup/
+CrashAutoSave.*
+.DS_Store
+__pycache__/
